@@ -6,7 +6,7 @@ import (
 
 // Returns default font (DroidSansMono) with specified size and scaling
 func DefaultFont(size int, scaling float64) Face {
-	fontData, _ := assets.Asset("DroidSansMono.ttf")
+	fontData, _ := assets.Asset("UbuntuMono.ttf")
 	face, err := NewFace(fontData, int(float64(size)*scaling))
 	if err != nil {
 		panic(err)
